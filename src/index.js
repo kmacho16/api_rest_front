@@ -19,6 +19,8 @@ app.use(express.urlencoded({extended:false}));
 app.use(routeIndex);
 app.use('/api',routeApi);
 
+//https://www.youtube.com/watch?v=-7aK7zn7NaY 21,22
+
 
 
 
