@@ -1,7 +1,6 @@
 {
   "name": "front",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -17,5 +16,14 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmacho16/api_rest_front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmacho16/api_rest_front/issues"
+  },
+  "homepage": "https://github.com/kmacho16/api_rest_front#readme",
+  "description": ""
 }

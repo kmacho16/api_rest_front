@@ -3,9 +3,11 @@ const express = require('express');
 const app = express();
 const routeIndex = require('./routes/index');
 const routeApi= require('./routes/tasks');
+const path= require('path');
 
 
 //settings
+app.set('views',path.join(__dirname,'views'));
 app.set('port',process.env.PORT || 3000);
 app.engine('html',require('ejs').renderFile);
 app.set('view engine','ejs');
@@ -24,7 +26,4 @@ app.use('/api',routeApi);
 
 
 
-app.listen(3000,()=>{
-	console.log("server port 3000");
-
-	});
+app.listen(3000,()=>{});
