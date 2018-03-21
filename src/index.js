@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const routeIndex = require('./routes/index');
+//const routeIndex = require('./routes/index');
 const routeApi= require('./routes/tasks');
 const path= require('path');
 
@@ -18,8 +18,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 //routes
-app.use(routeIndex);
+//app.use(routeIndex);
 app.use('/api',routeApi);
+
+//static files
+app.use(express.static(path.join(__dirname,'dist')));
 
 //https://www.youtube.com/watch?v=-7aK7zn7NaY 21,22
 
